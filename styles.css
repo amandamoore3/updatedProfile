@@ -459,10 +459,318 @@ template {
   display: none;
 }
 
+/*//////BREAKPOINTS//////*/
+
+@media(max-width: 900px) {
+  .navBar {
+    display: flex;
+    background-color: #303633;
+    max-height: 4em;
+    width: 100%;
+  }
+  .navLogo {
+    flex: 1;
+  }
+  .navImage {
+    max-height: 100%;
+    object-fit: contain;
+    margin-left: 0;
+  }
+  .navEmpty {
+    flex: 2;
+  }
+  .navLinks {
+    flex: 1;
+    display: flex;
+  }
+  .navLink {
+    font-family: "Ubuntu";
+    flex: 1;
+    text-decoration: none;
+    color: #ffffff !important;
+    font-size: 125%;
+    font-weight: 500;
+  }
+  .navBar {
+    position: sticky;
+    top: 0;
+  }
+  /* Dropdown Button */
+  .dropBtnSmall {
+    background-color: #303633;
+    color: white;
+    height: 100%;
+    min-width: 6em;
+    font-size: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdownSmall {
+    position: relative;
+    display: inline-block;
+    margin: 1em auto;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-contentSmall {
+    font-family: "Ubuntu";
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0em 0.25em 0.5em 0em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-contentSmall a {
+    color: black;
+    padding: 1em 1.25em;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-contentSmall a:hover {
+    background-color: #E0E0E0;
+    color: #000000;
+  }
+  /* Show the dropdown menu on hover */
+  .dropdownSmall:hover .dropdown-contentSmall {
+    display: block;
+  }
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdownSmall:hover .dropbtnSmall {
+    background-color: #000000;
+  }
+  /* Dropdown Button */
+  .dropBtn {
+    display: none;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    /*position: relative;*/
+    display: none;
+  }
+  /*//////MEDIA BLOCK//////*/
+  .mediaBlockContainer {
+    display: inline-block;
+    /*max-height: 10em;*/
+    width: 90%;
+    margin: 1em;
+  }
+  .mediaImg {
+    /*flex: 2;*/
+    max-width: 100%;
+    text-align: center;
+  }
+  .mediaPic {
+    /*object-fit: contain;*/
+    height: auto;
+    max-width: 60%;
+    padding-left: 2em;
+  }
+  .mediaText {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .mediaTitle {
+    /*margin-left: 0em;*/
+    /*margin-bottom: 1em;*/
+    overflow-wrap: break-word;
+  }
+  .mediaContent {
+    line-height: 125%;
+    font-family: "WSL";
+    font-size: 100%;
+    /*margin-left: 0em;*/
+    overflow-wrap: break-word;
+  }
+}
+
+@media(min-width: 901px) {
+  textarea, select {
+    width: 50%;
+    padding: .5em 1em;
+  }
+  /*//////NAVIGATION BAR//////*/
+  .navBar {
+    display: flex;
+    background-color: #303633;
+    max-height: 4em;
+    width: 100%;
+  }
+  .navLogo {
+    flex: 1;
+  }
+  .navImage {
+    height: 100%;
+    object-fit: contain;
+    margin-left: 0;
+  }
+  .navEmpty {
+    flex: 2;
+  }
+  .navLinks {
+    flex: 1;
+    display: flex;
+  }
+  /* Dropdown Button */
+  .dropBtnSmall {
+    display: none;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdownSmall {
+    /*position: relative;*/
+    display: none;
+  }
+  .navLink {
+    flex: 1;
+    text-decoration: none;
+    color: #ffffff !important;
+    font-size: 125%;
+    font-weight: 500;
+  }
+  .navBar {
+    position: sticky;
+    top: 0;
+  }
+  /* Dropdown Button */
+  .dropBtn {
+    background-color: #303633;
+    color: white;
+    height: 100%;
+    min-width: 6em;
+    font-size: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0em 0.25em 0.5em 0em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 1em 1.25em;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #E0E0E0;
+    color: #000000;
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #000000;
+  }
+  /*//////MEDIA BLOCK//////*/
+  .mediaBlockContainer {
+    display: flex;
+    max-height: 10em;
+    width: 97%;
+    margin: 1em;
+  }
+  .mediaImg {
+    flex: 2;
+    max-width: 100%;
+  }
+  .mediaPic {
+    object-fit: contain;
+    max-height: 100%;
+    padding-left: 2em;
+  }
+  .mediaText {
+    flex: 5;
+  }
+  .mediaTitle {
+    margin-left: 0em;
+    margin-bottom: 1em;
+  }
+  .mediaContent {
+    line-height: 125%;
+    font-family: "WSL";
+    font-size: 100%;
+    margin-left: 0em;
+  }
+}
+
+/*///END OF 901 BREAKPOINT///*/
+
 /*//////CUSTOMIZED STYLING//////*/
 
 * {
   font-family: arial;
+}
+
+/*//////ELEMENTS//////*/
+
+header {
+  font-weight: bolder;
+  font-size: 150%;
+  font-family: "Ubuntu";
+}
+
+h1 {
+  font-size: 4.5em;
+  /*margin-bottom: 1rem;
+  margin-left: 3rem;*/
+  margin: 2rem 0 1rem 3rem;
+}
+
+h2 {
+  font-size: 4em;
+  /*margin-bottom: 1rem;
+  margin-left: 3rem;*/
+  margin: 2rem 0 1rem 3rem;
+}
+
+h3 {
+  font-size: 3.5em;
+  /*margin-bottom: 1rem;
+  margin-left: 3rem;*/
+  margin: 2rem 0 1rem 3rem;
+}
+
+h4 {
+  font-size: 3em;
+  /*margin-bottom: 1rem;
+  margin-left: 3rem;*/
+  margin: 2rem 0 1rem 3rem;
+}
+
+h5 {
+  font-size: 2.5em;
+  /*margin-bottom: 1rem;
+  margin-left: 3rem;*/
+  margin: 2rem 0 1rem 3rem;
+}
+
+h6 {
+  font-size: 2em;
+  /*margin-bottom: 1rem;
+  margin-left: 3rem;*/
+  margin: 2rem 0 1rem 3rem;
+}
+
+p {
+  font-size: 125%;
+  margin-bottom: 1em;
+  margin-left: 3rem;
+  line-height: 175%;
 }
 
 img {
@@ -484,14 +792,6 @@ img {
   justify-content: center;
 }
 
-.box1 {
-  flex: 1;
-}
-
-.box4 {
-  flex: 4;
-}
-
 .container {
   display: flex;
   /*border: solid 1px;*/
@@ -504,14 +804,13 @@ img {
   color: #ffffff;
 }
 
-.navBar {
+/*.navBar {
   display: flex;
   background-color: #303633;
   height: 3em;
   position: sticky;
   top: 0;
   height: 3sem;
-  /*border: solid 1px;*/
 }
 
 .navLogo {
@@ -519,23 +818,18 @@ img {
 }
 
 #logo {
-  /*height: 4em;
-  width: 3.75em;*/
   max-height: 90%;
-  /*max-height: 3em;*/
   overflow: hidden;
   margin-left: 1em;
 }
 
 .navEmpty {
   flex: 2;
-  /*border: solid 1px;*/
 }
 
 .navLinks {
   flex: 1;
   display: flex;
-  /*border: solid 1px;*/
 }
 
 .link {
@@ -545,7 +839,7 @@ img {
   font-size: large;
   font-weight: 600;
   margin: 1em;
-}
+}*/
 
 #headshot, .profBio {
   padding: 3em;
