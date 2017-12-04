@@ -467,33 +467,50 @@ template {
     background-color: #303633;
     max-height: 4em;
     width: 100%;
+    position: sticky;
+    top: 0;
   }
   .navLogo {
     flex: 1;
   }
+  .logo {
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+  }
   .navImage {
-    max-height: 100%;
+    height: 100%;
     object-fit: contain;
     margin-left: 0;
   }
   .navEmpty {
-    flex: 2;
+    flex: 1;
   }
   .navLinks {
     flex: 1;
     display: flex;
   }
+  .link {
+    flex: 1;
+    text-decoration: none;
+    color: #CBD4C2;
+    font-size: large;
+    font-weight: 600;
+    margin: 1em;
+  }
+  .navLinksWide {
+    display: none;
+  }
+  .navLinkSmall {
+    position: absolute;
+    right: 0;
+  }
   .navLink {
-    font-family: "Ubuntu";
     flex: 1;
     text-decoration: none;
     color: #ffffff !important;
     font-size: 125%;
     font-weight: 500;
-  }
-  .navBar {
-    position: sticky;
-    top: 0;
   }
   /* Dropdown Button */
   .dropBtnSmall {
@@ -513,7 +530,6 @@ template {
   }
   /* Dropdown Content (Hidden by Default) */
   .dropdown-contentSmall {
-    font-family: "Ubuntu";
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -555,7 +571,7 @@ template {
     display: inline-block;
     /*max-height: 10em;*/
     width: 90%;
-    margin: 1em;
+    /*margin: 1em;*/
   }
   .mediaImg {
     /*flex: 2;*/
@@ -563,14 +579,18 @@ template {
     text-align: center;
   }
   .mediaPic {
-    /*object-fit: contain;*/
+    object-fit: contain;
     height: auto;
-    max-width: 60%;
-    padding-left: 2em;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
   }
   .mediaText {
     margin: 0 auto;
-    text-align: center;
+    /*text-align: center;*/
+    /*height: 100%;*/
+    vertical-align: middle;
   }
   .mediaTitle {
     /*margin-left: 0em;*/
@@ -579,7 +599,6 @@ template {
   }
   .mediaContent {
     line-height: 125%;
-    font-family: "WSL";
     font-size: 100%;
     /*margin-left: 0em;*/
     overflow-wrap: break-word;
@@ -587,10 +606,6 @@ template {
 }
 
 @media(min-width: 901px) {
-  textarea, select {
-    width: 50%;
-    padding: .5em 1em;
-  }
   /*//////NAVIGATION BAR//////*/
   .navBar {
     display: flex;
@@ -601,17 +616,30 @@ template {
   .navLogo {
     flex: 1;
   }
+  .logo {
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+  }
   .navImage {
     height: 100%;
     object-fit: contain;
     margin-left: 0;
   }
   .navEmpty {
-    flex: 2;
+    flex: 1;
   }
   .navLinks {
     flex: 1;
     display: flex;
+  }
+  .link {
+    flex: 1;
+    text-decoration: none;
+    color: #CBD4C2;
+    font-size: large;
+    font-weight: 600;
+    margin: 1em;
   }
   /* Dropdown Button */
   .dropBtnSmall {
@@ -680,7 +708,7 @@ template {
   /*//////MEDIA BLOCK//////*/
   .mediaBlockContainer {
     display: flex;
-    max-height: 10em;
+    /*max-height: 10em;*/
     width: 97%;
     margin: 1em;
   }
@@ -691,7 +719,7 @@ template {
   .mediaPic {
     object-fit: contain;
     max-height: 100%;
-    padding-left: 2em;
+    /*padding-left: 2em;*/
   }
   .mediaText {
     flex: 5;
@@ -702,7 +730,6 @@ template {
   }
   .mediaContent {
     line-height: 125%;
-    font-family: "WSL";
     font-size: 100%;
     margin-left: 0em;
   }
@@ -713,7 +740,7 @@ template {
 /*//////CUSTOMIZED STYLING//////*/
 
 * {
-  font-family: arial;
+  font-family: monospace;
 }
 
 /*//////ELEMENTS//////*/
@@ -721,55 +748,55 @@ template {
 header {
   font-weight: bolder;
   font-size: 150%;
-  font-family: "Ubuntu";
 }
 
 h1 {
   font-size: 4.5em;
   /*margin-bottom: 1rem;
   margin-left: 3rem;*/
-  margin: 2rem 0 1rem 3rem;
+  /*margin: 2rem 0 1rem 3rem;*/
 }
 
 h2 {
   font-size: 4em;
   /*margin-bottom: 1rem;
   margin-left: 3rem;*/
-  margin: 2rem 0 1rem 3rem;
+  /*margin: 2rem 0 1rem 3rem;*/
 }
 
 h3 {
   font-size: 3.5em;
   /*margin-bottom: 1rem;
   margin-left: 3rem;*/
-  margin: 2rem 0 1rem 3rem;
+  /*margin: 2rem 0 1rem 3rem;*/
 }
 
 h4 {
   font-size: 3em;
   /*margin-bottom: 1rem;
-  margin-left: 3rem;*/
-  margin: 2rem 0 1rem 3rem;
+  /*margin-left: 3rem;*/
+  */
+  /*margin: 2rem 0 1rem 3rem;*/
 }
 
 h5 {
   font-size: 2.5em;
   /*margin-bottom: 1rem;
   margin-left: 3rem;*/
-  margin: 2rem 0 1rem 3rem;
+  /*margin: 2rem 0 1rem 3rem;*/
 }
 
 h6 {
   font-size: 2em;
   /*margin-bottom: 1rem;
   margin-left: 3rem;*/
-  margin: 2rem 0 1rem 3rem;
+  margin: 0;
 }
 
 p {
   font-size: 125%;
-  margin-bottom: 1em;
-  margin-left: 3rem;
+  /*margin-bottom: 1em;
+  margin-left: 3rem;*/
   line-height: 175%;
 }
 
@@ -783,13 +810,17 @@ img {
 .ancTools, .ancPortfolio, .footer {
   border-top: solid 1px;
   border-top-color: #cbd4c2;
-  margin-top: 5em;
+  /*margin-top: 5em;*/
   /*margin-bottom: 10em;*/
 }
 
 .toolkitContainer, .portfolioContainer, .iconLinks {
   align-items: center;
   justify-content: center;
+}
+
+.aboutContainer {
+  margin-top: 2em;
 }
 
 .container {
@@ -841,8 +872,12 @@ img {
   margin: 1em;
 }*/
 
-#headshot, .profBio {
+.profBio {
   padding: 3em;
+}
+
+.mediaPic {
+  object-fit: contain;
 }
 
 .iconLinks {
@@ -851,16 +886,16 @@ img {
 
 .icon {
   flex: 1;
-  height: 5em;
-  width: 5em;
+  height: 3em;
+  width: 3em;
   flex-direction: column;
   margin: 2em;
 }
 
 .tool {
   flex: 1;
-  height: 7em;
-  width: 7em;
+  height: 5em;
+  width: 5em;
   margin: 1em;
   padding: 1em;
 }
@@ -912,7 +947,8 @@ img {
 .col2 {
   float: left;
   width: 16.66%;
-  border: solid 1px;
+  /*border: solid 1px;*/
+  height: 10em;
 }
 
 .col3 {
@@ -933,7 +969,7 @@ img {
 .col8 {
   float: left;
   width: 66.66%;
-  border: solid 1px;
+  /*border: solid 1px;*/
 }
 
 .col12 {
