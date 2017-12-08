@@ -467,8 +467,6 @@ template {
     background-color: #303633;
     max-height: 4em;
     width: 100%;
-    position: sticky;
-    top: 0;
   }
   .navLogo {
     flex: 1;
@@ -501,9 +499,9 @@ template {
   .navLinksWide {
     display: none;
   }
-  .navLinkSmall {
+  .navLinksSmall {
     position: absolute;
-    right: 0;
+    right: 3em;
   }
   .navLink {
     flex: 1;
@@ -603,6 +601,21 @@ template {
     /*margin-left: 0em;*/
     overflow-wrap: break-word;
   }
+  .toolkitContainer {
+    display: flex;
+  }
+  .tool {
+    flex: 1;
+    flex-direction: column;
+    height: 5em;
+    width: 5em;
+    /*margin: 1em;
+    padding: 1em;*/
+  }
+  .thumbnailContainer {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 @media(min-width: 901px) {
@@ -630,8 +643,11 @@ template {
     flex: 1;
   }
   .navLinks {
-    flex: 1;
+    flex: 2;
     display: flex;
+    position: absolute;
+    right: 0;
+    margin: 0.5em;
   }
   .link {
     flex: 1;
@@ -656,6 +672,10 @@ template {
     color: #ffffff !important;
     font-size: 125%;
     font-weight: 500;
+  }
+  .navlinksWide {
+    position: absolute;
+    right: 0;
   }
   .navBar {
     position: sticky;
@@ -710,7 +730,7 @@ template {
     display: flex;
     /*max-height: 10em;*/
     width: 97%;
-    margin: 1em;
+    margin: 3em 1em;
   }
   .mediaImg {
     flex: 2;
@@ -723,6 +743,7 @@ template {
   }
   .mediaText {
     flex: 5;
+    margin-left: 1em;
   }
   .mediaTitle {
     margin-left: 0em;
@@ -733,14 +754,31 @@ template {
     font-size: 100%;
     margin-left: 0em;
   }
+  .toolkitContainer {
+    display: flex;
+  }
+  .tool {
+    flex: 1;
+    height: 5em;
+    width: 5em;
+    margin: 1em;
+    padding: 1em;
+  }
+  .container {
+    display: flex;
+    /*border: solid 1px;*/
+  }
 }
 
 /*///END OF 901 BREAKPOINT///*/
+
+@media(min-width: 901px) {}
 
 /*//////CUSTOMIZED STYLING//////*/
 
 * {
   font-family: monospace;
+  word-wrap: break-word;
 }
 
 /*//////ELEMENTS//////*/
@@ -807,11 +845,20 @@ img {
   max-height: 90vh;
 }
 
+.intro {
+  margin: 3em 0 3em 2em;
+  padding-right: 1em;
+}
+
 .ancTools, .ancPortfolio, .footer {
   border-top: solid 1px;
   border-top-color: #cbd4c2;
-  /*margin-top: 5em;*/
+  margin-top: 2em;
   /*margin-bottom: 10em;*/
+}
+
+.ancPortfolio {
+  margin-top: 3em;
 }
 
 .toolkitContainer, .portfolioContainer, .iconLinks {
@@ -821,18 +868,20 @@ img {
 
 .aboutContainer {
   margin-top: 2em;
-}
-
-.container {
   display: flex;
-  /*border: solid 1px;*/
 }
 
 .fullScreenContainer {
+  display: flex;
   height: 100vh;
   background: url("https://sdtimes.com/wp-content/uploads/2017/03/pexels-photo-160107.jpeg") no-repeat;
   background-size: cover;
   color: #ffffff;
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
 }
 
 /*.navBar {
@@ -890,14 +939,6 @@ img {
   width: 3em;
   flex-direction: column;
   margin: 2em;
-}
-
-.tool {
-  flex: 1;
-  height: 5em;
-  width: 5em;
-  margin: 1em;
-  padding: 1em;
 }
 
 .thumbnailContainer {
