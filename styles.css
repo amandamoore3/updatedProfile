@@ -561,18 +561,13 @@ template {
   }
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
-    /*position: relative;*/
     display: none;
   }
   /*//////MEDIA BLOCK//////*/
   .mediaBlockContainer {
     display: inline-block;
-    /*max-height: 10em;*/
-    width: 90%;
-    /*margin: 1em;*/
   }
   .mediaImg {
-    /*flex: 2;*/
     max-width: 100%;
     text-align: center;
   }
@@ -586,19 +581,14 @@ template {
   }
   .mediaText {
     margin: 0 auto;
-    /*text-align: center;*/
-    /*height: 100%;*/
     vertical-align: middle;
   }
   .mediaTitle {
-    /*margin-left: 0em;*/
-    /*margin-bottom: 1em;*/
     overflow-wrap: break-word;
   }
   .mediaContent {
     line-height: 125%;
     font-size: 100%;
-    /*margin-left: 0em;*/
     overflow-wrap: break-word;
   }
   .toolkitContainer {
@@ -609,8 +599,6 @@ template {
     flex-direction: column;
     height: 5em;
     width: 5em;
-    /*margin: 1em;
-    padding: 1em;*/
   }
   .thumbnailContainer {
     margin: 0 auto;
@@ -663,7 +651,6 @@ template {
   }
   /* The container <div> - needed to position the dropdown content */
   .dropdownSmall {
-    /*position: relative;*/
     display: none;
   }
   .navLink {
@@ -739,7 +726,6 @@ template {
   .mediaPic {
     object-fit: contain;
     max-height: 100%;
-    /*padding-left: 2em;*/
   }
   .mediaText {
     flex: 5;
@@ -766,7 +752,6 @@ template {
   }
   .container {
     display: flex;
-    /*border: solid 1px;*/
   }
 }
 
@@ -790,51 +775,31 @@ header {
 
 h1 {
   font-size: 4.5em;
-  /*margin-bottom: 1rem;
-  margin-left: 3rem;*/
-  /*margin: 2rem 0 1rem 3rem;*/
 }
 
 h2 {
   font-size: 4em;
-  /*margin-bottom: 1rem;
-  margin-left: 3rem;*/
-  /*margin: 2rem 0 1rem 3rem;*/
 }
 
 h3 {
   font-size: 3.5em;
-  /*margin-bottom: 1rem;
-  margin-left: 3rem;*/
-  /*margin: 2rem 0 1rem 3rem;*/
 }
 
 h4 {
   font-size: 3em;
-  /*margin-bottom: 1rem;
-  /*margin-left: 3rem;*/
-  */
-  /*margin: 2rem 0 1rem 3rem;*/
 }
 
 h5 {
   font-size: 2.5em;
-  /*margin-bottom: 1rem;
-  margin-left: 3rem;*/
-  /*margin: 2rem 0 1rem 3rem;*/
 }
 
 h6 {
   font-size: 2em;
-  /*margin-bottom: 1rem;
-  margin-left: 3rem;*/
   margin: 0;
 }
 
 p {
   font-size: 125%;
-  /*margin-bottom: 1em;
-  margin-left: 3rem;*/
   line-height: 175%;
 }
 
@@ -854,7 +819,6 @@ img {
   border-top: solid 1px;
   border-top-color: #cbd4c2;
   margin-top: 2em;
-  /*margin-bottom: 10em;*/
 }
 
 .ancPortfolio {
@@ -883,43 +847,6 @@ img {
   position: fixed;
   top: 0;
 }
-
-/*.navBar {
-  display: flex;
-  background-color: #303633;
-  height: 3em;
-  position: sticky;
-  top: 0;
-  height: 3sem;
-}
-
-.navLogo {
-  flex: 1;
-}
-
-#logo {
-  max-height: 90%;
-  overflow: hidden;
-  margin-left: 1em;
-}
-
-.navEmpty {
-  flex: 2;
-}
-
-.navLinks {
-  flex: 1;
-  display: flex;
-}
-
-.link {
-  flex: 1;
-  text-decoration: none;
-  color: #CBD4C2;
-  font-size: large;
-  font-weight: 600;
-  margin: 1em;
-}*/
 
 .profBio {
   padding: 3em;
@@ -959,17 +886,6 @@ img {
   text-align: center;
 }
 
-/*
-.bio {
-  border: solid 1px;
-  display: flex;
-  flex: 1;
-}*/
-
-/*.aboutContainer{
-  border: solid 1px;
-}*/
-
 /*//////GRID//////*/
 
 .gridContainer {
@@ -988,7 +904,6 @@ img {
 .col2 {
   float: left;
   width: 16.66%;
-  /*border: solid 1px;*/
   height: 10em;
 }
 
@@ -1010,7 +925,6 @@ img {
 .col8 {
   float: left;
   width: 66.66%;
-  /*border: solid 1px;*/
 }
 
 .col12 {
